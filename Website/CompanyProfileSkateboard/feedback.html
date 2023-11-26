@@ -1,0 +1,61 @@
+<!--- Feedback --->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APPASKATESHOP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/stylefeed.css">
+  </head>
+  <body>
+    
+    <!-- Navbar Feedback Buat Balik Ke Home -->
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <a href="index.html"><img src="img/logofix.png" /></a>
+          <ul class="navbar-list" id="navbarList">
+            <li><a href="index.html">HOME</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Isian Feedbacknya -->
+    <section>
+      <div class="container">
+        <h3 class="feedback">FEEDBACK</h3>
+        <form action="feedback.php" method="POST">
+    
+          <!-- Gunakan kelas Bootstrap untuk membuat grid -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="name">Username:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+            </div>
+    
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" required>
+              </div>
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea class="form-control" id="comments" name="comments" rows="5" required></textarea>
+          </div>
+    
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Copyright &copy; 2023 - APPASKATESHOP All Right Reserved.</p>
+    </footer>
+  </body>
+</html>
